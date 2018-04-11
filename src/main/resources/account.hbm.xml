@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="model.Account" table="accounts">
+        <id name="accountNumber" type="long">
+            <column name="accountNumber" />
+            <generator class="assigned" />
+        </id>
+        
+        <property name="firstName" type="string">
+            <column name="firstName" length="30" not-null="true" />
+        </property>
+        
+        <property name="midName" type="string">
+            <column name="midName" length="30"/>
+        </property>
+        
+        <property name="lastName" type="string">
+            <column name="lastName" length="30" not-null="true"/>
+        </property>
+        
+        <property name="phoneNumber1" type="string">
+            <column name="phoneNumber1" length="20" not-null="true"/>
+        </property>
+        
+        <property name="phoneNumber2" type="string">
+            <column name="phoneNumber2" length="20"/>
+        </property>
+        
+        <property name="email1" type="string">
+            <column name="email1" length="30" not-null="true"/>
+        </property>
+        
+        <property name="email2" type="string">
+            <column name="email2" length="30"/>
+        </property>
+        
+        <property name="address1" type="string">
+            <column name="address1" length="45" not-null="true"/>
+        </property>
+        
+        <property name="address2" type="string">
+            <column name="address2" length="45"/>
+        </property>
+
+	<property name="state" column="state">
+		<type name="org.hibernate.type.EnumType">
+			<param name="enumClass">model.State</param>
+			<param name="useNamed">true</param>
+		</type>
+	</property>
+	
+	<property name="accountType" column="accountType">
+		<type name="org.hibernate.type.EnumType">
+			<param name="enumClass">model.AccountType</param>
+			<param name="useNamed">true</param>
+		</type>
+	</property>
+	
+	 <property name="cardID" type="long">
+            <column name="idCard" length="12" not-null="true"/>
+        </property>
+        
+        
+                
+    </class>
+</hibernate-mapping>

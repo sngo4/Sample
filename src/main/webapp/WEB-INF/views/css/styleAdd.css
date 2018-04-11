@@ -1,0 +1,130 @@
+
+	html,
+	body {
+	  font-size: 100%;
+	  height: 100%;
+	  overflow: hidden;
+	}
+
+.addStyle {
+  position: relative;
+  height: inherit;
+  background-image: url("background.jpg");
+  background-size: cover;
+  overflow: auto;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  
+}
+
+.addAccount {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: black;
+    background-image: url("AllViewbgr.png");
+    background-size: cover;
+    box-shadow: 0 0 20px 0 #000000;
+    position: absolute;
+    top: 10%;
+    left: 25%;
+    /* margin-left: -50rem; */
+    /* margin-top: -26.5rem; */
+    width: 50%;
+    height: inherit;
+}
+
+.addAccount h3 {
+	margin: 0 15px 20px;
+	border-bottom: 2px solid rebeccapurple;
+	padding: 5px 10px 5px 0;
+	font-size: 1.1em;
+	color: rebeccapurple;
+}
+
+.addAccount div {
+	margin: 0 0 15px 0;
+	border: none;
+}
+
+.addAccount label, a {
+	display: inline-block;
+	width: 25%;
+	text-align: right;
+	margin: 10px;
+}
+
+.addAccount input[type=text], .addAccount input[type=password] , .addAccount input[type=email]{
+	width: 65%;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Tahoma, Sans-Serif;
+	padding: 5px;
+	font-size: 0.9em;
+	border-radius: 5px;
+	background: rgba(0, 0, 0, 0.07);
+}
+
+.addAccount input[type=text]:focus, .addAccount input[type=password]:focus, .addAccount input[type=email]:FOCUS
+	{
+	background: #FFFFFF;
+}
+
+.addAccount select{
+	width: 20%;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Tahoma, Sans-Serif;
+	padding: 5px;
+	font-size: 0.9em;
+	border-radius: 5px;
+	background: rgba(0, 0, 0, 0.07);
+}
+
+.addAccount .button {
+	font-size: 1.5em;
+	/* border-radius: 8px; */
+	padding: 10px;
+	border: 1px solid #595DB9;
+	box-shadow: 0 1px 0 0 #5149BD inset;
+	background: #6251E6;
+	background: -webkit-linear-gradient(#5152E6, #1827D4);
+	background: -moz-linear-gradient(#63E651, #42753E);
+	background: -o-linear-gradient(#63E651, #42753E);
+	background: rgba(6, 22, 249, 0.47);
+	position: absolute;
+    left: 50%;
+}
+
+.addAccount .button:hover {
+	background: #51DB1C;
+	background: -webkit-linear-gradient(#51DB1C, #6BA061);
+	background: -moz-linear-gradient(#51DB1C, #6BA061);
+	background: -o-linear-gradient(#51DB1C, #6BA061);
+	background: rgba(239, 247, 239, 0);
+}
+
+.addAccount .sep {
+	border: 1px solid #72B372;
+	position: relative;
+	margin: 35px 20px;
+}
+
+.addAccount .social-buttons {
+	display: inline-block;
+	min-width: 150px;
+	height: 50px;
+	margin: 0 5px 10px;
+	border-radius: 10px;
+	text-shadow: 1px 1px 5px #000000;
+}
+
+.addAccount .social-buttons a {
+	display: block;
+	height: 100%;
+	text-decoration: none;
+	color: #FFFFFF;
+	padding: 10px 15px;
+}
+
+.addAccount .social-buttons span {
+	font-size: 30px;
+	margin-left: 35px;
+}
+
+.footer {
+	
+}

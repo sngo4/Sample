@@ -23,11 +23,11 @@ public class Loging implements java.io.Serializable {
 
 	}
 
-	public int getIdLogin() {
+	public int getUserId() {
 		return userId;
 	}
 
-	public void setIdLogin(int userId) {
+	public void setUserId(int userId) {
 		this.userId = userId;
 	}
 

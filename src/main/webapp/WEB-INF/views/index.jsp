@@ -34,7 +34,7 @@
               					<path	d="M0,20 a10,8 0 0,1 20,0z M10,0 a4,4 0 0,1 0,8 a4,4 0 0,1 0,-8" />
             				</svg>
 							<form:input path="username" type="text" class="login__input name"
-								id="userName" name="userName" value="nz23" placeholder="Username"  required="required" pattern="[A-Za-z0-9]{1,20}" />
+								id="userName" name="userName" value="sang" placeholder="Username"  required="required" pattern="[A-Za-z0-9]{1,20}" />
 							<form:errors path="username" cssClass="error" />
 						</div>
 						
@@ -43,11 +43,11 @@
               					<path	d="M0,20 20,20 20,8 0,8z M10,13 10,16z M4,8 a6,8 0 0,1 12,0" />
             				</svg>
 							<form:input path="password" type="password"
-								class="login__input pass" id="password"  name="password"  value="123" placeholder="Password"  required="required" pattern="[A-Za-z0-9]{1,20}" />
+								class="login__input pass" id="password"  name="password"  value="p@ssword123" placeholder="Password"  required="required" pattern="[A-Za-z0-9]{1,20}" />
 							<form:errors path="password" cssClass="error" />
 						</div>
 						
-							<button onclick="document.getElementById('checkLogin').innerHTML = con sang lam bieng" 
+							<button onclick="document.getElementById('checkLogin').innerHTML = TRY AGAIN!!!" 
 							type="submit" class="login__submit" id="login__submit" 
 							>Login</button>
 						

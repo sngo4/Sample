@@ -1,13 +1,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.csc</groupId>
-  <artifactId>Sample</artifactId>
-  <packaging>war</packaging>
-  <version>0.0.1-SNAPSHOT</version>
-  <name>Sample Maven Webapp</name>
-  <url>http://maven.apache.org</url>
-  <dependencies>
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.csc</groupId>
+	<artifactId>Sample</artifactId>
+	<packaging>war</packaging>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>Sample Maven Webapp</name>
+	<url>http://maven.apache.org</url>
+
+	<dependencies>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
@@ -28,32 +29,42 @@
 			<artifactId>spring-orm</artifactId>
 			<version>4.1.1.RELEASE</version>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-test</artifactId>
 			<version>4.1.1.RELEASE</version>
 		</dependency>
-		
-		<!-- <dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-core</artifactId>
-			<version>4.2.4.RELEASE</version>
-		</dependency> -->
-				<!-- SANG https://mvnrepository.com/artifact/org.mongodb/mongo-java-driver -->
+
+		<!-- <dependency> <groupId>org.springframework</groupId> <artifactId>spring-core</artifactId> 
+			<version>4.2.4.RELEASE</version> </dependency> -->
+		<!-- SANG https://mvnrepository.com/artifact/org.mongodb/mongo-java-driver -->
 		<dependency>
-    		<groupId>org.mongodb</groupId>
-    		<artifactId>mongo-java-driver</artifactId>
-    		<version>3.6.3</version>
+			<groupId>org.mongodb</groupId>
+			<artifactId>mongo-java-driver</artifactId>
+			<version>3.6.3</version>
 		</dependency>
-					<!-- Spring data mongodb -->
+		<dependency>
+			<groupId>org.hibernate.ogm</groupId>
+			<artifactId>hibernate-ogm-bom</artifactId>
+			<version>5.0.0.Final</version>
+			<type>pom</type>
+			<scope>import</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.hibernate.ogm</groupId>
+			<artifactId>hibernate-ogm-mongodb</artifactId>
+			<version>5.0.0.Final</version>
+		</dependency>
+		<!-- Spring data mongodb -->
 		<!-- https://mvnrepository.com/artifact/org.springframework.data/spring-data-mongodb -->
 		<dependency>
 			<groupId>org.springframework.data</groupId>
 			<artifactId>spring-data-mongodb</artifactId>
 			<version>1.2.0.RELEASE</version>
 		</dependency>
-			<dependency>
+		<dependency>
 			<groupId>cglib</groupId>
 			<artifactId>cglib</artifactId>
 			<version>2.2.2</version>
@@ -64,27 +75,27 @@
 			<artifactId>mysql-connector-java</artifactId>
 			<version>5.1.37</version>
 		</dependency>
-		
+
 		<dependency>
-	        <groupId>net.sf.json-lib</groupId>
-	        <artifactId>json-lib</artifactId>
-	        <version>2.4</version>
-	        <classifier>jdk15</classifier>
-    	</dependency>		
+			<groupId>net.sf.json-lib</groupId>
+			<artifactId>json-lib</artifactId>
+			<version>2.4</version>
+			<classifier>jdk15</classifier>
+		</dependency>
 
 
-		
-		<!-- jsr303 validation dependencies-->
-        <dependency>
-            <groupId>javax.validation</groupId>
-            <artifactId>validation-api</artifactId>
-            <version>1.1.0.Final</version>
-        </dependency>
-        <dependency>
-            <groupId>org.hibernate</groupId>
-            <artifactId>hibernate-validator</artifactId>
-            <version>5.1.2.Final</version>
-        </dependency>
+
+		<!-- jsr303 validation dependencies -->
+		<dependency>
+			<groupId>javax.validation</groupId>
+			<artifactId>validation-api</artifactId>
+			<version>1.1.0.Final</version>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-validator</artifactId>
+			<version>5.1.2.Final</version>
+		</dependency>
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-core</artifactId>
@@ -109,14 +120,14 @@
 			<artifactId>commons-logging</artifactId>
 			<version>1.1.3</version>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>commons-dbcp</groupId>
 			<artifactId>commons-dbcp</artifactId>
 			<version>1.4</version>
 		</dependency>
-		
-		
+
+
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
@@ -124,17 +135,17 @@
 			<scope>test</scope>
 		</dependency>
 
-		
+
 		<dependency>
 			<groupId>org.mockito</groupId>
 			<artifactId>mockito-core</artifactId>
 			<version>1.10.19</version>
 			<exclusions>
-			        <exclusion>
-			            <artifactId>hamcrest-core</artifactId>
-			            <groupId>org.hamcrest</groupId>
-			        </exclusion>
-		    </exclusions>
+				<exclusion>
+					<artifactId>hamcrest-core</artifactId>
+					<groupId>org.hamcrest</groupId>
+				</exclusion>
+			</exclusions>
 			<scope>test</scope>
 		</dependency>
 
@@ -158,28 +169,28 @@
 			<version>1.6.2</version>
 			<scope>test</scope>
 		</dependency>
-		
-		
+
+
 		<dependency>
-		    <groupId>com.fasterxml.jackson.core</groupId>
-		    <artifactId>jackson-core</artifactId>
-		    <version>2.2.1</version>
-		    <scope>test</scope>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-core</artifactId>
+			<version>2.2.1</version>
+			<scope>test</scope>
 		</dependency>
 		<dependency>
-		    <groupId>com.fasterxml.jackson.core</groupId>
-		    <artifactId>jackson-databind</artifactId>
-		    <version>2.2.1</version>
-		    <scope>test</scope>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.2.1</version>
+			<scope>test</scope>
 		</dependency>
-		
+
 		<dependency>
-		    <groupId>org.hamcrest</groupId>
-		    <artifactId>hamcrest-all</artifactId>
-		    <version>1.3</version>
-		    <scope>test</scope>
+			<groupId>org.hamcrest</groupId>
+			<artifactId>hamcrest-all</artifactId>
+			<version>1.3</version>
+			<scope>test</scope>
 		</dependency>
-		
+
 	</dependencies>
 
 	<build>

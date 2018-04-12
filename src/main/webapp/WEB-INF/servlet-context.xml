@@ -69,13 +69,10 @@
 			<value>.jsp</value>
 		</property>
 	</bean>
-
-	<bean id="logingDao" class="dao.LogingDaoImpl">
+<!--Commnet out sessionFactory start -->
+	<!-- <bean id="logingDao" class="dao.LogingDaoImpl">
 		<property name="sessionFactory" ref="sessionFactory" />
 	</bean>
-	
-	<!-- <bean id="logingServiceImpl" class="service.LogingServiceImpl">
-	</bean> -->
 	
 	<bean id="logingService" class="service.LogingServiceImpl">
 	</bean>
@@ -85,7 +82,7 @@
 	</bean>
 
 	<bean id="accountService" class="service.AccountServiceImpl">
-	</bean>
-
+	</bean> -->
+<!--Commnet out sessionFactory end -->
 
 </beans>

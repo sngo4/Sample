@@ -2,8 +2,6 @@
 package dao;
 
 import java.util.List;
-
-import org.hibernate.SessionFactory;
 import org.springframework.stereotype.Repository;
 
 import model.Loging;
@@ -11,11 +9,7 @@ import model.Loging;
 @Repository
 public interface LogingDao {
 	
-	public SessionFactory getSessionFactory();
-	
-	public void setSessionFactory(SessionFactory sessionFactory);
-	
-	public Loging getLoging(Integer logingID);
+	public Loging getLoging(Integer idLogin);
 	
 	public List<Loging> listLoging();
 	

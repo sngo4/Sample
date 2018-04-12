@@ -36,7 +36,7 @@ public class AdminController {
 	@RequestMapping(value = { "/","/login" }, method = RequestMethod.POST)
 	public String loginForm(@Valid Loging loging, 
 			ModelMap model, HttpServletRequest requestLoging){
-		System.out.println("sang loging" + loging.getIdLogin());
+		System.out.println("sang loging" + loging.getUserId());
 		Loging manager = logingService.checkLoging(loging.getUsername(), loging.getPassword());
 		
 		if(manager != null){
